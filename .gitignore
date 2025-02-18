@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Makes sure the API key isn't added to the public repository.
+TMDB_API_Key.txt

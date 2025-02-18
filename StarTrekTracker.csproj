@@ -8,4 +8,11 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MicaWPF" Version="6.2.10" />
+    <PackageReference Include="MicaWPF.Core" Version="6.2.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="TMDbLib" Version="2.2.0" />
+  </ItemGroup>
+
 </Project>
