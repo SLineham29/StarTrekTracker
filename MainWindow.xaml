@@ -1,12 +1,30 @@
-﻿<Window x:Class="StarTrekTracker.MainWindow"
+﻿<controls:MicaWindow x:Class="StarTrekTracker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StarTrekTracker"
+        xmlns:controls="clr-namespace:MicaWPF.Controls;assembly=MicaWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="StarTrekTracker" Height="720" Width="875" Background="White">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Star Trek Tracker&#xD;&#xA;" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="174" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Image x:Name="imgTOS" HorizontalAlignment="Left" Height="265" Margin="27,40,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="imgTNG" HorizontalAlignment="Left" Height="265" Margin="239,40,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="imgDSN" HorizontalAlignment="Left" Height="265" Margin="451,40,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="imgV" HorizontalAlignment="Left" Height="265" Margin="663,40,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="imgE" HorizontalAlignment="Left" Height="265" Margin="27,363,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="imgD" HorizontalAlignment="Left" Height="265" Margin="239,363,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="imgP" HorizontalAlignment="Left" Height="265" Margin="451,363,0,0" VerticalAlignment="Top" Width="185"/>
+        <Image x:Name="imgFilms" HorizontalAlignment="Left" Height="265" Margin="663,363,0,0" VerticalAlignment="Top" Width="185"/>
+        <Button x:Name="btnTOS" Content="The Original Series" HorizontalAlignment="Left" Margin="65,316,0,0" VerticalAlignment="Top" Width="110" Cursor="IBeam"/>
+        <Button x:Name="btnTNG" Content="The Next Generation" HorizontalAlignment="Left" Margin="277,316,0,0" VerticalAlignment="Top" Cursor="IBeam"/>
+        <Button x:Name="btnDSN" Content="Deep Space Nine" HorizontalAlignment="Left" Margin="496,316,0,0" VerticalAlignment="Top" Cursor="IBeam"/>
+        <Button x:Name="btnV" Content="Voyager" HorizontalAlignment="Left" Margin="732,316,0,0" VerticalAlignment="Top" Cursor="IBeam"/>
+        <Button x:Name="btnE" Content="Enterprise" HorizontalAlignment="Left" Margin="92,635,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnD" Content="Discovery" HorizontalAlignment="Left" Margin="306,635,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnP" Content="Picard" HorizontalAlignment="Left" Margin="525,635,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnFilms" Content="Films" HorizontalAlignment="Left" Margin="740,635,0,0" VerticalAlignment="Top"/>
 
     </Grid>
-</Window>
+</controls:MicaWindow>
