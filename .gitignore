@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# API Key is placed in a separate file to prevent it being publically available.
+.env

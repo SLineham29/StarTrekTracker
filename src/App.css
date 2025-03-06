@@ -1,21 +1,6 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -33,10 +18,21 @@
   }
 }
 
-.card {
-  padding: 2em;
+.posterGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.posterGrid img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.5em lightyellow);
 }
