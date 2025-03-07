@@ -4,10 +4,20 @@ const posterURL = "https://image.tmdb.org/t/p/w500";
 
 export async function getTVShowPoster(showID) {
     try {
-        var response = await fetch(`https://api.themoviedb.org/3/tv/${showID}?api_key=${apiKey}`);
+        let storedShow = localStorage.getItem(`showDetails_${showID}`)
 
-        var show = await response.json();
+        let show;
 
+        if(storedShow) {
+            show = JSON.parse(storedShow);
+        }
+        else {
+            var response = await fetch(`https://api.themoviedb.org/3/tv/${showID}?api_key=${apiKey}`);
+
+            show = await response.json();
+
+            localStorage.setItem(`showDetails_${showID}`, JSON.stringify(show))
+        }
         return `${posterURL}${show.poster_path}`
     }
     catch (error) {
