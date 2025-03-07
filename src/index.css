@@ -1,5 +1,5 @@
 :root {
-  font-family: EdgeOfTheGalaxy, sans-serif;
+  font-family: FinalFrontierOldStyle, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: 'EdgeOfTheGalaxy';
-  src: url('./assets/fonts/EdgeOfTheGalaxyRegular.otf') format('truetype');
+  font-family: 'FinalFrontierOldStyle';
+  src: url("./assets/fonts/FinalFrontierOldStyle.ttf");
 }
 
 a {
