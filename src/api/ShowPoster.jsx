@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import { getTVShowPoster } from "./api/tmdbAPI.js";
+import { getTVShowPoster } from "./tmdbAPI.js";
 
 // ({ tvShowID }) here means the variables that are usually sent as 'properties' are instead individual,
 // meaning you don't need to use "props.??" to access them.

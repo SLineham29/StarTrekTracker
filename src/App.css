@@ -3,19 +3,9 @@
   text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logo {
+  font-size: 75px;
+  padding-top: 20px;
 }
 
 .posterGrid {
@@ -27,6 +17,20 @@
   padding: 20px;
 }
 
+.posterGrid button {
+  transition: transform 0.2s ease;
+  background: transparent;
+}
+
+.posterGrid button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.posterGrid button:hover {
+  transform: scale(1.05);
+}
+
 .posterGrid img {
   width: 100%;
   height: auto;
@@ -34,5 +38,12 @@
   max-width: 100%;
   object-fit: cover;
   border-radius: 10px;
-  filter: drop-shadow(0 0 0.5em lightyellow);
+  filter: drop-shadow(0 0 0.5em lightblue);
+}
+
+.posterGrid caption {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 25px;
 }

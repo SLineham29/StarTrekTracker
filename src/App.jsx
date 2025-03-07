@@ -1,5 +1,5 @@
 import './App.css'
-import ShowPoster from "./ShowPoster.jsx"
+import ShowPoster from "./api/ShowPoster.jsx"
 
 var showIDs = [253, 655, 580, 1855, 314, 67198, 85949, 103516];
 
@@ -10,13 +10,18 @@ function App() {
         <title>
             Star Trek Tracker
         </title>
-        <header className='Logo'>
+        <header className='logo'>
             Star Trek Tracker
         </header>
 
         <div className='posterGrid'>
             {showIDs.map((id) => (
-                <ShowPoster key={id} tvShowID={id} />
+                <div key={id}>
+                    <button key={id}>
+                        <ShowPoster key={id} tvShowID={id} />
+                    </button>
+                    <caption>Progress: 0%</caption>
+                </div>
             ))}
         </div>
     </>
