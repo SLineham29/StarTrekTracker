@@ -1,6 +1,6 @@
 const apiKey = import.meta.env.VITE_TMDB_API_KEY;
 
-const posterURL = "https://image.tmdb.org/t/p/w500";
+const posterURL = "https://image.tmdb.org/t/p/w342";
 
 export async function getTVShowPoster(showID) {
     try {

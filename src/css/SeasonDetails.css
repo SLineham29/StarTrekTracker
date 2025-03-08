@@ -17,3 +17,42 @@
 .EpisodeList button:hover {
     background-color: gray;
 }
+
+#SeasonEpisodeCombo {
+    margin-top: 15px;
+}
+
+#EpisodeName {
+    margin: 0 0 0 0;
+}
+
+.EpisodeDetails {
+    margin-left: 15%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.EpisodeInformation img{
+    border-radius: 15px;
+    width: 40%;
+    height: auto;
+}
+
+.EpisodeInformation {
+    display: flex;
+    font-size: 15px;
+    gap: 20px;
+    align-items: center;
+}
+
+.GuestStars {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.GuestStars img {
+    border-radius: 50px;
+}

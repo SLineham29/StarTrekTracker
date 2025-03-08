@@ -20,7 +20,6 @@ function MainMenu() {
                         <button key={id} onClick={() => navigate(`/show/${id}`)}>
                             <ShowPoster key={id} tvShowID={id} />
                         </button>
-                        <h2>Progress: 0%</h2>
                     </div>
                 ))}
             </div>
