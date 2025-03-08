@@ -30,3 +30,21 @@ export async function getShowDetails(showID) {
     }
     return show;
 }
+
+export async function getShowSeason(showID, seasonNum) {
+    let storedSeason = localStorage.getItem(`showSeason_${showID}_${seasonNum}`)
+
+    let season;
+
+    if(storedSeason) {
+        season = JSON.parse(storedSeason)
+    }
+    else {
+        var response = await fetch(`https://api.themoviedb.org/3/tv/${showID}/season/${seasonNum}?api_key=${apiKey}`)
+
+        season = await response.json();
+
+        localStorage.setItem(`showSeason_${showID}_${seasonNum}`, JSON.stringify(season))
+    }
+    return season;
+}
