@@ -58,6 +58,19 @@
     filter: drop-shadow(0 0 0.75em black)
 }
 
+.fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .GuestStars {
     justify-content: center;
     align-items: center;

@@ -42,7 +42,7 @@ function SeasonDetails () {
 
             <button id='HomeButton' onClick={() => navigate('/')}>Return to home</button>
 
-            <div className='EpisodeDetails'>
+            <div className='EpisodeDetails fade-in' key={episodeNum}>
                 <h1 id='SeasonEpisodeCombo'>
                     Season {season.season_number} - Episode {episodeNum}
                 </h1>
