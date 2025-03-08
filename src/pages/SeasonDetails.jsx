@@ -16,6 +16,7 @@ function SeasonDetails () {
         async function getDetails() {
             var jsonDetails = await getShowSeason(id, seasonNum);
             setSeason(jsonDetails);
+            setEpisode(1);
         }
         getDetails();
     },[id, seasonNum]);
