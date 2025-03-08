@@ -57,7 +57,7 @@ function SeasonDetails () {
                 <h2>Guest Stars</h2>
                 <div className='GuestStars'>
                     {episodes[episodeNum-1].guest_stars.map((guest, index) => (
-                        <div>
+                        <div key={`${id}_season_${seasonNum}_episode_${episodeNum-1}_guest_${index}_div`}>
                             <ShowImage imagePath={guest.profile_path}></ShowImage>
                             <h2 key={`${id}_season_${seasonNum}_episode_${episodeNum-1}_guest_${index}_name`}>{guest.name}</h2>
                             <h3 key={`${id}_season_${seasonNum}_episode_${episodeNum-1}_guest_${index}_character`}>{guest.character}</h3>
