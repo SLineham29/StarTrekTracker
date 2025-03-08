@@ -1,5 +1,5 @@
 import '../css/SeasonDetails.css'
-import {useParams} from "react-router";
+import {useNavigate, useParams} from "react-router";
 import {useEffect, useState} from "react";
 import {getShowSeason} from "../api/tmdbAPI.js";
 import ShowStill from "../api/ShowStill.jsx";
@@ -8,6 +8,7 @@ import SeasonSelector from "./SeasonSelector.jsx";
 
 function SeasonDetails () {
 
+    let navigate = useNavigate();
     let {id, seasonNum} = useParams();
     let [season, setSeason] = useState(null);
     let [episodeNum, setEpisode] = useState(1);
@@ -39,6 +40,8 @@ function SeasonDetails () {
                 ))}
             </div>
 
+            <button id='HomeButton' onClick={() => navigate('/')}>Return to home</button>
+
             <div className='EpisodeDetails'>
                 <h1 id='SeasonEpisodeCombo'>
                     Season {season.season_number} - Episode {episodeNum}
@@ -49,7 +52,7 @@ function SeasonDetails () {
 
                 <div className='EpisodeInformation'>
                     <ShowStill stillPath={episodes[episodeNum-1].still_path}></ShowStill>
-                    <div>
+                    <div className='EpisodeOverview'>
                         <h1>{episodes[episodeNum-1].overview}</h1>
                         <h1>Average Rating: {averagePercentage}%</h1>
                     </div>

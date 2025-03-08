@@ -18,6 +18,13 @@
     background-color: gray;
 }
 
+#HomeButton {
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+}
+
 #SeasonEpisodeCombo {
     margin-top: 15px;
 }
@@ -43,6 +50,12 @@
     font-size: 15px;
     gap: 20px;
     align-items: center;
+}
+
+.EpisodeOverview {
+    background-color: #242424;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75em black)
 }
 
 .GuestStars {
