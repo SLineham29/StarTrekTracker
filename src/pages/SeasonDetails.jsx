@@ -31,6 +31,8 @@ function SeasonDetails () {
 
     return(
         <>
+            <title>{`${season.name} - Episode ${episodeNum}`}</title>
+
             <div className='EpisodeList'>
                 <SeasonSelector></SeasonSelector>
                 {episodes.map((episode) => (

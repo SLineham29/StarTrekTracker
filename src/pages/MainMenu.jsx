@@ -7,9 +7,6 @@ function MainMenu() {
     let navigate = useNavigate();
     return (
         <>
-            <title>
-                Star Trek Tracker
-            </title>
             <header className='logo'>
                 Star Trek Tracker
             </header>
