@@ -1,4 +1,4 @@
-# SL-StarTrekTracker
+# StarTrekTracker
 
 Learning React by making a small personal website where I can track the average rating of Star Trek episodes as I go through the series.
 
