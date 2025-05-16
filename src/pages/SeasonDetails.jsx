@@ -28,6 +28,7 @@ function SeasonDetails () {
 
     let episodes = season.episodes;
     let averagePercentage = Math.floor((episodes[episodeNum-1].vote_average * 10));
+    let airDate = new Date(episodes[episodeNum-1].air_date);
 
     return(
         <>
@@ -56,6 +57,7 @@ function SeasonDetails () {
                     <ShowStill stillPath={episodes[episodeNum-1].still_path}></ShowStill>
                     <div className='EpisodeOverview'>
                         <h1>{episodes[episodeNum-1].overview}</h1>
+                        <h1>Original Air Date: {airDate.toLocaleDateString()}</h1>
                         <h1>Average Rating: {averagePercentage}%</h1>
                     </div>
                 </div>
