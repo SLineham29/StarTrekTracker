@@ -82,3 +82,21 @@
 .GuestStars img {
     border-radius: 50px;
 }
+
+.WatchedCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.WatchedCheckbox input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    accent-color: lightblue;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.3em lightblue);
+    border-radius: 5px;
+}
